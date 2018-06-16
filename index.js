@@ -1,14 +1,16 @@
 const fs = require('fs');
-var imagePath;
 
-var checkValidityPromise = new Promise((resolve, reject) => {
+function checkValidity(imagePath, callback) {
+    var valid = false;
+    var error;
+    var stat;
+
     if (!imagePath) {
-        throw new Error("This is not a valid image path");
+        error = new Error("This is not a valid image path");
+        return;
     }
 
-    var valid = false;
-
-    var stat = fs.lstatSync(imagePath);
+    stat = fs.lstatSync(imagePath);
 
     if (stat.isFile()) {
         // check if is a valid jpg/jpeg image
@@ -24,23 +26,9 @@ var checkValidityPromise = new Promise((resolve, reject) => {
         });
 
         readable.on('end', () => {
-            resolve(valid);
+            callback(error, valid);
         });
     }
-});
-
-
-/**
- * 
- */
-exports.isValid = (path) => {
-    imagePath = path;
-    checkValidityPromise.then(function (valid) {
-        if (valid) {
-            console.log('Whooo the image is valid!')
-        }
-        else {
-            console.error('Oh no, something went wrong :(')
-        }
-    });
 }
+
+exports.isValid = checkValidity;
