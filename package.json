@@ -1,6 +1,6 @@
 {
   "name": "valid-jpeg",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Very simple node.js package to check if a jpeg image is valid",
   "main": "index.js",
   "scripts": {
