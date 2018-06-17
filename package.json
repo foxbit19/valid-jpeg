@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/foxbit19/valid-jpeg/issues"
   },
-  "homepage": "https://github.com/foxbit19/valid-jpeg#readme"
+  "homepage": "https://github.com/foxbit19/valid-jpeg#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
 }
