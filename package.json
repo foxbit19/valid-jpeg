@@ -1,6 +1,6 @@
 {
   "name": "valid-jpeg",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Very simple node.js package to check if a jpeg image is valid",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,8 @@
     "url": "https://github.com/foxbit19/valid-jpeg/issues"
   },
   "homepage": "https://github.com/foxbit19/valid-jpeg#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "mocha": "^5.2.0"
   }
 }
