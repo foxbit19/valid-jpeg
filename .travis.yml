@@ -1,5 +1,13 @@
 language: node_js
 node_js:
-  - "8"
-  - "7"
-  - "6"
+- '8'
+- '7'
+- '6'
+deploy:
+  provider: npm
+  email: foxbit@protonmail.com
+  api_key:
+    secure: ApaRKxyiLpL3JxvWaAF9JBTfnuUQ0UZeFrlamqI96gHeLrrXNnS2huj9sOCOAMFoGtpcIG0FeAbYPAAzhuk6GRhrRDj444UO75hrXx2TXFuYbumPYBbY/RJAm5TJBcTmaj0P10R/9XeH+F4789IY2baX+f7GXBbb/r2oTaTCShdZP35lJvKMciwk1+Zek/5oh8RIP/QO46Rz5OiDmYxnhmcTTzMRy5kXQsjom66OI40N2fkXkH6nFlKnnqYOfJfSuZOy3T8adbBFbDAMuf5mh27rHt7mTNLYSC0Aj6eMVUTbsyOd8wXt5Wr4slW/tOIRJZWky6jp0FtDVOiRlwn2d7k+tf/x+MKmO3cAa8BuegSJvoUvpWGlb8jwylk63P/CmlmHtpC04NkddChC1xMCydkVhJ/A2gcUdODqRR5wo6HKIcLB0mB2MgGfWxRru4tBope4R1CRc+PZPDxyYVaNj6vIRNg735UD2I2vu3eEXxgbPLPl8lxOAWG9UkVA5G93yhNQdB7JT2XE3+9qlr6Pth+DDr0wYUgvJ6Pxpje+7BcrMq3NymYViR6CEsB7tiM/Ob4etDLWNMVzVghwTXjiYxIM/ZjwjY2GbS1eEyHYsx/+ie6S2jBJfWcRK4pwf1c8CJAugLBPY2a0exhU2nHX8XHAuqQ7E17jmDPwFhVtukM=
+  on:
+    tags: true
+    repo: foxbit19/valid-jpeg
