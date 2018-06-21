@@ -11,7 +11,11 @@
     "url": "git+https://github.com/foxbit19/valid-jpeg.git"
   },
   "keywords": [
-    "jpeg"
+    "jpeg",
+    "valid",
+    "validity",
+    "checker",
+    "image"
   ],
   "author": "foxbit19 <foxbit@protonmail.com>",
   "license": "MIT",
